@@ -1,0 +1,32 @@
+.logo{
+    width: 150px;
+}
+
+.headerbox{
+    padding: 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    height: 75px;
+}
+
+.headerlist{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 0;
+}
+
+li{
+    float: left;
+    margin-right: 10px;
+    background-color: #000;
+}
+
+li a{
+    text-decoration: none;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding: 2px 5px;
+}
+

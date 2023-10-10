@@ -1,5 +1,6 @@
 .logo{
     width: 150px;
+    border: solid blue;
 }
 
 .headerbox{
@@ -7,13 +8,14 @@
     color: white;
     box-shadow: 0 4px 4px rgba(0,0,0,0.2);
     height: 75px;
+    border: solid red;
 }
 
 .headerlist{
     list-style-type: none;
     display: inline-block;
     padding-left: 0;
-    
+    border: solid red;
 }
 
 
@@ -47,6 +49,14 @@ li a:hover{
     color: #000;
 }
 
+.heropicture{
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
 .hero{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -5,7 +5,7 @@
 .headerbox{
     padding: 20px;
     color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
     height: 75px;
 }
 
@@ -15,6 +15,8 @@
     padding-left: 0;
     
 }
+
+
 
 li{
     float: left;
@@ -43,4 +45,8 @@ li a.active{
 li a:hover{
     background-color: #fff;
     color: #000;
+}
+
+.hero{
+    width: 100%;
 }

@@ -8,8 +8,13 @@
     color: white;
     box-shadow: 0 4px 4px rgba(0,0,0,0.2);
     height: 75px;
+    content: "";
+    clear: both;
+    display: table;
     border: solid red;
 }
+
+
 
 .headerlist{
     list-style-type: none;

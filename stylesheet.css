@@ -74,6 +74,22 @@ li a:hover{
     object-fit: cover;
 }
 
+.mntwhite{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+}
+
+h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 .shopnowbutton{
     background-color: #10596A;
     height: 60px;

@@ -69,7 +69,27 @@ nav > ul > li > a {
 
 @media (min-width: 768px){
 
-        
+    label[for=hamburger-menu] {
+        display: none;
+    }   
+
+    nav{
+        margin-top: 0;
+        display: block;
+    }
+
+    nav > ul{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+
+    }
+
+    nav > ul > li > a{
+        width: 100px; 
+        margin: 0 0 0 12px;
+    }
 
 }
 

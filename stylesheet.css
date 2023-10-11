@@ -1,3 +1,10 @@
+@font-face{
+    font-family: popreg;
+    src: url(Fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo{
     width: 90px;
 }

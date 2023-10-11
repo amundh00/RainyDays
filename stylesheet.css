@@ -10,7 +10,7 @@ body{font-family: 'poppinsregular';}
 
 
 .logo{
-    width: 90px;
+    width: 120px;
 }
 
 .headerbox{
@@ -29,7 +29,6 @@ body{font-family: 'poppinsregular';}
     display: inline-block;
     padding-left: 0;
     margin-left: 50px;
-
 }
 
 ul{
@@ -54,7 +53,7 @@ li a{
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 10px;
     text-decoration: none;
     font-size: 1.2rem;
 }

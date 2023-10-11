@@ -1,9 +1,13 @@
 @font-face{
-    font-family: popreg;
+    font-family: 'poppinsregular';
     src: url(Fonts/Poppins-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
+
+body{font-family: 'poppinsregular';}
+
+
 
 .logo{
     width: 90px;
@@ -23,7 +27,7 @@
 .headerlist{
     list-style-type: none;
     display: inline-block;
-    padding-left: ;
+    padding-left: 0;
     margin-left: 50px;
 
 }
@@ -66,7 +70,7 @@ li a.active{
 
 li a:hover{
     background-color: #fff;
-    color: #000;
+    color: #10596A;
 }
 
 .heropicture{

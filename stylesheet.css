@@ -17,13 +17,15 @@
     width: 100%;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .headerlist{
     list-style-type: none;
     display: inline-block;
-    padding-left: 0;
+    padding-left: ;
     margin-left: 50px;
+
 }
 
 ul{
@@ -36,7 +38,7 @@ ul{
 
 li{
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
     text-decoration: none;
     background-color: #10596A;
     text-align: center;
@@ -79,6 +81,7 @@ li a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
 }
 
 .mntwhite{
@@ -112,7 +115,6 @@ h1{
     transform: translate(-50%, -50%);
     cursor: pointer;
     font-size: 2rem;
-    border-radius: 15px;
 }
 
 .shopnowbutton:hover{

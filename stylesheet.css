@@ -50,6 +50,11 @@ label[for=hamburger-menu] {
     font-size: 2em;
     text-align: right;
 }
+
+nav > ul > li > a:hover{
+    background-color: white; 
+    color:  #10596A;
+}
  
 nav > ul {
     list-style-type: none;
@@ -63,15 +68,14 @@ nav > ul > li > a {
     display: inline-block;
     text-decoration: none;
     padding: 4px 10px;
-    border: 1px solid black;
-    background-color: black;
+    background-color:  #10596A;
     color: white;
     text-align: center;
     width: 100%;
     margin: 3px 0;
 }
 
-@media (min-width: 768px){
+@media (min-width: 890px){
 
     label[for=hamburger-menu] {
         display: none;
@@ -97,9 +101,58 @@ nav > ul > li > a {
 
 }
 
+.heropicture{
+    text-align: center;
+    position: relative;
+    margin-top: 0c;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero{
+    width: 100%;
+    object-fit: cover;
+}
+
+.mntwhite{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+}
+
+h1{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shopnowbutton{
+    background-color: #10596A;
+    height: 40px;
+    width: 120px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1rem;
+}
 
 
-
+@media (min-width: 768px){
 
 .heropicture{
     height: 550px;
@@ -114,7 +167,6 @@ nav > ul > li > a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 2;
 }
 
 .mntwhite{
@@ -153,4 +205,69 @@ h1{
 .shopnowbutton:hover{
     background-color: white;
     color: #10596A;
+}
+
+}
+
+.contactsheet{
+    border: solid black;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #10596A), url(Bilder/herohome.jpg) ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+   margin-bottom: 30px; 
+   position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+textarea{
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
 }

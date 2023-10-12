@@ -10,6 +10,10 @@ body{font-family: 'poppinsregular';}
 header {
     display: flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0 3px 3px 0 black;
+    z-index: 1;
 }
 
 #logo-container{
@@ -80,7 +84,7 @@ nav > ul > li > a {
 
     nav > ul{
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         height: 64px;
 
@@ -88,7 +92,7 @@ nav > ul > li > a {
 
     nav > ul > li > a{
         width: 100px; 
-        margin: 0 0 0 12px;
+        margin: 0 0 0 20px;
     }
 
 }
@@ -99,7 +103,7 @@ nav > ul > li > a {
 
 .heropicture{
     height: 550px;
-    margin-top: 6px;
+    margin-top: 0;
     width: 100%;
     overflow: hidden;
     position: relative;

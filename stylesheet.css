@@ -239,7 +239,7 @@ input, textarea{
     font-size: 15px;
 }
 
-.contactsheet > label{
+.field{
     height: 100%;
     position: absolute;
     left: 0;
@@ -269,11 +269,4 @@ textarea:focus~label,
 textarea:valid~label{
     top: -35px;
     font-size: 14px;
-}
-
-.contactsheet > h2{
-    top: 20%;
-    font-size: 45px;
-    color: white;
-    letter-spacing: 2px;
 }

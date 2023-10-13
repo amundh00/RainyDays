@@ -210,7 +210,6 @@ h1{
 }
 
 .contactsheet{
-    border: solid black;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7), #10596A), url(Bilder/herohome.jpg) ;
@@ -240,7 +239,7 @@ input, textarea{
     font-size: 15px;
 }
 
-label{
+.contactsheet > label{
     height: 100%;
     position: absolute;
     left: 0;
@@ -270,4 +269,11 @@ textarea:focus~label,
 textarea:valid~label{
     top: -35px;
     font-size: 14px;
+}
+
+.contactsheet > h2{
+    top: 20%;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 2px;
 }

@@ -24,7 +24,7 @@ header {
     flex-wrap: wrap;
     background-color: whitesmoke;
     padding: 15px 15px 15px 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -298,6 +298,7 @@ textarea:valid~label{
     width: 300px;
     padding: 20px;
     border-radius: 20px;
+    
 }
 
 .jacket-container > img{

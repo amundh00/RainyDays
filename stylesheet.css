@@ -151,18 +151,26 @@ h1{
 
 .shopnowbutton{
     background-color: #10596A;
-    height: 40px;
-    width: 120px;
+    height: 50px;
+    width: 130px;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     position: absolute;
+    justify-content: center;
+    text-align: center;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.shopnowbutton:hover{
+    background-color: white;
+    color: #10596A;
 }
 
 
@@ -214,11 +222,6 @@ h1{
     transform: translate(-50%, -50%);
     cursor: pointer;
     font-size: 2rem;
-}
-
-.shopnowbutton:hover{
-    background-color: white;
-    color: #10596A;
 }
 
 }
@@ -298,7 +301,7 @@ textarea:valid~label{
     width: 300px;
     padding: 20px;
     border-radius: 20px;
-    
+    border: solid black;
 }
 
 .jacket-container > img{

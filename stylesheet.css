@@ -309,6 +309,13 @@ textarea:valid~label{
     font-size: 14px;
 }
 
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0
+    ;
+}
 
 /*Jacket Cards*/
 
@@ -316,7 +323,7 @@ textarea:valid~label{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px 0 25px 0;
+    margin: 0px 0 25px 0;
     transform: scale(0.8);
 }
 
@@ -345,14 +352,14 @@ textarea:valid~label{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 150px;
+    width: 130px;
     margin: 5px;
     align-self: left;
 }
 
 .color-container > div{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: #10596A;
     border-radius: 50%;
     margin: 0 0 0 0px;

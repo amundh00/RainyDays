@@ -317,6 +317,7 @@ textarea:valid~label{
     justify-content: center;
     align-items: center;
     margin: 25px 0 25px 0;
+    transform: scale(0.9);
 }
 
 .jacket-container{
@@ -327,7 +328,6 @@ textarea:valid~label{
     width: 300px;
     padding: 20px;
     border-radius: 20px;
-    margin-right: 0;
 }
 
 .jacket-container > img{
@@ -346,15 +346,16 @@ textarea:valid~label{
     flex-direction: row;
     justify-content: space-between;
     width: 200px;
-    margin: 10px;
+    margin: 5px;
     align-self: left;
 }
 
 .color-container > div{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: #10596A;
     border-radius: 50%;
+    margin: 0 0 0 0px;
 }
 
 .color-container > div:hover{

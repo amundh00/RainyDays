@@ -323,7 +323,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 25% 0 25%;
+    margin: 25px 0 25px 0;
 }
 
 .jacket-container{
@@ -369,7 +369,13 @@ h2{
     box-sizing: border-box;
 }
 
+@media (min-width: 556px){
+    .jacket-container-link{
+        display: flex;
+        flex-direction: row;
 
+    }
+}
 
 
 /*Footer*/

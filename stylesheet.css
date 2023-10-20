@@ -374,6 +374,13 @@ h2{
     .jackets{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .jacket-container{
+            flex-basis: calc(33.33% - 5px);
+        margin: 50px;
     }
 }
 

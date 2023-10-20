@@ -393,16 +393,20 @@ h2{
 /*Footer*/
 
 footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
     height: 250px; 
     background-color: #D9D9D9;
 }
 
-footer > ul > h3{
+.footer-nav > ul > h3{
     color: black;
     text-align: left;
 }
 
-footer > ul> li > a{
+
+.footer-nav > li > a{
     text-decoration: none;
     color: white;
     background-color: #10596A; 
@@ -414,7 +418,16 @@ footer > ul > li > a:hover{
     background-color: white;
 }
 
-footer > ul > li{
+.footer-nav > li{
+    margin: 0 0 15px 0;
+    list-style: none;
+}
+
+.footer-other{
+    text-align: right;
+}
+
+.footer-other > li{
     margin: 0 0 15px 0;
     list-style: none;
 }

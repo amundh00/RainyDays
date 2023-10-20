@@ -319,28 +319,29 @@ h2{
 
 /*Jacket Cards*/
 
-.jacket-container-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0 25px 0;
-}
 
 .jacket-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #D9D9D9;
     height: auto;
+    margin: 25px 0 25px 0;
     width: 300px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.jacket-container > img{
-    width: auto;
+.jacket-container > div > a > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
 }
 
-.jacket-container > p{
+.jacket-container > div > a > p{
     text-decoration: none;
     color: black; 
     text-align: left;
@@ -370,9 +371,6 @@ h2{
 }
 
 @media (min-width: 556px){
-    .jacket-container-link{
-        display: flex;
-        flex-direction: row;
 
     }
 }

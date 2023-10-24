@@ -386,73 +386,32 @@ h2{
 /*Footer*/
 
 .footerlist-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 0 15px 0 15px;
-}
-
-footer{
-    margin-top: 25px;
-    height: 250px; 
+    display: flex;
+    flex-direction: row;
     background-color: #D9D9D9;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.footer-left{
-    margin: 0;
-    padding: 0;
+.footerlist-container > div > ul > li > a{
+    background-color: #10596A;
+
+}
+
+.footerlist-container > a > img {
+    width: 50px;
 }
 
 .footer-right{
-    margin: 0;
-    padding: 0;
     text-align: right;
 }
 
-.footer-left > ul > h3{
-    color: black;
-    text-align: left;
-}
-
-
-.footer-left > li > a{
+.footer-right > ul > li > a{
     text-decoration: none;
-    color: white;
-    background-color: #10596A; 
-    padding: 5px;
-}
-
-footer > .footerlist-container > ul > li > a:hover{
-    cursor: pointer;
-    color: #10596A;
-    background-color: white;
-}
-
-.footer-left > li{
-    margin: 0 0 15px 0;
-    list-style: none;
-}
-.footer-right > li{
-    margin: 0 0 15px 0;
     list-style: none;
 }
 
-.footer-right > li > a{
-    justify-content: center;
-    align-items: center;
+.footerlist-container > div > ul > li{
     text-decoration: none;
-    color: white;
-    background-color: #10596A;
-    padding: 5px;
-}
-
-
-
-footer > .footerlist-container > a > img{
-    align-items: center;
-    width: 50px;
-    height: auto;
+    list-style: none;
 }
 
 /*Crumbs*/

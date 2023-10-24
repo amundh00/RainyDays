@@ -153,33 +153,34 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    background-color: #10596A;
+    height: 35px;
+    width: 90px;
+    font-size: 1.2rem;
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
 }
 
-.shopnowbutton{
-    background-color: #10596A;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    cursor: pointer;
-    font-size: 1.3rem;
-    white-space: nowrap;
-    transform: scale(1);
-    width: 150px;
-}
-
 .shoptext{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
 }
 
-.shopnowbutton:hover{
+.shoptext:hover{
+    color: #10596A;
+}
+
+.button-container:hover{
     background-color: white;
     color: #10596A;
 }
@@ -223,24 +224,16 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     position: absolute;
+    height: 75px;
+    width: 150px;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
 }
 
-.shopnowbutton{
-    background-color: #10596A;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    cursor: pointer;
+.shoptext{
     font-size: 1.3rem;
-    white-space: nowrap;
-    transform: scale(1.5);
-    width: 150px;
 }
 
 }

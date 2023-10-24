@@ -248,7 +248,7 @@ h1{
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 form{
@@ -398,7 +398,7 @@ footer{
 
 footer > div{
     text-align: center;
-    margin: 50px;
+    margin: 15px;
 }
 
 footer > div > h2{
@@ -419,7 +419,7 @@ footer form input{
     width: 350px;
     height: 20px;
     text-align: center;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 20px 0;
     outline: none;
     background-color: #10596A;
     border: none;
@@ -431,7 +431,7 @@ footer form button{
     color: #fff;
     padding: 10px 30px;
     font-size: 15px;
-    width: 350px;
+    width: 370px;
     height: 40px;
 }
 
@@ -439,6 +439,10 @@ footer form button{
     footer{
         display: flex;
         flex-direction: row;
+    }
+    footer > div{
+        text-align: center;
+        margin: 50px;
     }
 }
 

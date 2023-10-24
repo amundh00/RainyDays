@@ -385,33 +385,31 @@ h2{
 
 /*Footer*/
 
-.footerlist-container{
+footer{
+    height: 250px;
+    background-color: #D9D9D9;
     display: flex;
     flex-direction: row;
-    background-color: #D9D9D9;
 }
 
-.footerlist-container > div > ul > li > a{
+.footerlist-container{
+    text-align: left;
+}
+
+.footerlist-container > ul > li{
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footerlist-container > ul > li > a{
     background-color: #10596A;
-
+    padding: 5px;
+    color: white;
 }
 
-.footerlist-container > a > img {
+footer > a > img{
     width: 50px;
-}
-
-.footer-right{
-    text-align: right;
-}
-
-.footer-right > ul > li > a{
-    text-decoration: none;
-    list-style: none;
-}
-
-.footerlist-container > div > ul > li{
-    text-decoration: none;
-    list-style: none;
 }
 
 /*Crumbs*/

@@ -386,30 +386,51 @@ h2{
 /*Footer*/
 
 footer{
-    height: 250px;
+    margin-top: 150px;
+    padding: 50px 15%;
     background-color: #D9D9D9;
+    color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.footerlist-container{
-    text-align: left;
+footer > div{
+    text-align: center;
+    margin: 50px;
 }
 
-.footerlist-container > ul > li{
-    list-style: none;
+footer > div > h2{
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 > a{
+    display: block;
     text-decoration: none;
-    margin: 10px;
-}
-
-.footerlist-container > ul > li > a{
-    background-color: #10596A;
-    padding: 5px;
     color: white;
+    background-color: #10596A;
+    margin-bottom: 10px;
 }
 
-footer > a > img{
-    width: 50px;
+footer form input{
+    width: 350px;
+    height: 20px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+    outline: none;
+    background-color: #10596A;
+    border: none;
+}
+
+footer form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
 }
 
 /*Crumbs*/
@@ -443,6 +464,10 @@ li.crumb a::after{
     margin: 50px;
     text-align: center;
     font-size: 1em;
+}
+
+.about-text > p{
+    text-align: left;
 }
 
 

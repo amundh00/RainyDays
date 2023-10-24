@@ -431,6 +431,15 @@ footer form button{
     color: #fff;
     padding: 10px 30px;
     font-size: 15px;
+    width: 350px;
+    height: 40px;
+}
+
+@media (min-width: 850px){
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*Crumbs*/

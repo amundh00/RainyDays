@@ -435,6 +435,11 @@ footer form button{
     height: 40px;
 }
 
+.col-1 a:hover{
+    color: #10596A;
+    background-color: white;
+}
+
 @media (min-width: 850px){
     footer{
         display: flex;

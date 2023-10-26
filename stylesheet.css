@@ -93,10 +93,45 @@ nav > ul > li > a {
     margin-right: 10px;
 }
 
+.search-bar{
+    display: none;
+}
+
 @media (min-width: 890px){
 
     label[for=hamburger-menu] {
         display: none;
+    }
+
+    .search-bar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background-color: #10596A;
+        color: black;
+        border-radius: 20px;
+        margin: 10px 30px;
+        width: 30px;
+        height: 25px;
+    }
+
+    @keyframes search {
+        from{
+            width: 30px
+        }
+        to{
+            width: 150px
+        }
+    }
+
+    .search-bar:focus{
+        animation-name: search;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .search-bar:valid{
+        width: 150px;
     }
 
     nav{

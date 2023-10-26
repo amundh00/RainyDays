@@ -103,24 +103,34 @@ nav > ul > li > a {
         display: none;
     }
 
+    .search-icon{
+        align-items: right;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
     .search-bar{
         display: block;
         align-items: center;
         justify-content: center;
         background-color: #10596A;
-        color: black;
+        color: white;
+        font-size: 1rem;
         border-radius: 20px;
         margin: 10px 30px;
-        width: 30px;
-        height: 25px;
+        width: 10px;
+        height: 10px;
     }
 
     @keyframes search {
         from{
-            width: 30px
+            width: 10px;
+            height: 10px;
         }
         to{
-            width: 150px
+            width: 150px;
+            height: 10px;
         }
     }
 
@@ -132,6 +142,17 @@ nav > ul > li > a {
 
     .search-bar:valid{
         width: 150px;
+    }
+
+    .search-container > div{
+        position: relative;
+    }
+
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
     }
 
     nav{

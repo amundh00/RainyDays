@@ -89,15 +89,15 @@ nav > ul > li > a {
 
 .fa-cart-shopping{
     color: black;
-    font-size: 2rem;
-    margin-right: 15px;
+    font-size: 1.8rem;
+    margin-right: 10px;
 }
 
 @media (min-width: 890px){
 
     label[for=hamburger-menu] {
         display: none;
-    }   
+    }
 
     nav{
         margin-top: 0;

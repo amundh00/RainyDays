@@ -97,6 +97,10 @@ nav > ul > li > a {
     display: none;
 }
 
+.search-icon{
+    display: none;
+}
+
 @media (min-width: 890px){
 
     label[for=hamburger-menu] {
@@ -104,33 +108,40 @@ nav > ul > li > a {
     }
 
     .search-icon{
+        display: block;
         align-items: right;
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
     }
 
+    .search-container{
+        margin-top: 7px;
+    }
+
     .search-bar{
         display: block;
+        border: none;
         align-items: center;
         justify-content: center;
         background-color: #10596A;
         color: white;
         font-size: 1rem;
+        padding: 4px;
         border-radius: 20px;
         margin: 10px 30px;
-        width: 10px;
-        height: 10px;
+        width: 32px;
+        height: 28px;
     }
 
     @keyframes search {
         from{
-            width: 10px;
-            height: 10px;
+            width: 32px;
+            height: 28px;
         }
         to{
             width: 150px;
-            height: 10px;
+            height: px;
         }
     }
 
@@ -310,7 +321,20 @@ h1{
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-between;
+}
+
+.contacttext{
+    color: white;
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.contactsheet > form{
+    margin: 100px;
 }
 
 form{
@@ -448,8 +472,8 @@ h2{
 /*Footer*/
 
 footer{
-    margin-top: 150px;
-    padding: 50px 15%;
+    margin-top: 0px;
+    padding: 10px 15%;
     background-color: #D9D9D9;
     color: black;
     display: flex;

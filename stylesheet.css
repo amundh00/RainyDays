@@ -320,25 +320,28 @@ h1{
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .contacttext{
     color: white;
-    width: 400px;
+    width: 300px;
+    margin: 50px 100px;
     height: 400px;
-    margin-left: 200px;
     text-align: center;
     font-size: 1em;
 }
 
 .contactsheet > form{
-    margin: 100px;
+    margin: 50px 100px;
+    width: 90%;
+    max-width: 300px;
 }
 
 form{
-    width: 90%;
+    width: 300px;
     max-width: 600px;
 }
 
@@ -394,6 +397,44 @@ h2{
     justify-content: center;
     margin: 0
     ;
+}
+
+@media (min-width: 576px){
+    .contactsheet{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), #10596A), url(Bilder/herohome.jpg) ;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contacttext{
+        color: white;
+        width: 400px;
+        margin: 0px 200px;
+        height: 550px;
+        text-align: left;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    .contactsheet > form{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    form{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .contactsheet > form{
+        margin-right: 200px;
+    }
 }
 
 /*Jacket Cards*/

@@ -101,7 +101,18 @@ nav > ul > li > a {
     display: none;
 }
 
+.fa-cart-shopping{
+    color: #10596A;
+    display: none;
+    margin: 20px;
+}
+
 @media (min-width: 890px){
+
+    .fa-cart-shopping{
+        display: flex;
+        margin: 20px;
+    }
 
     label[for=hamburger-menu] {
         display: none;

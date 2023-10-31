@@ -655,8 +655,11 @@ Jacket specific
 ********************/
 
 hr{
-    height: 2px;
+    width: 90%;
     background: black;  
+    border: solid 1px #000;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .clothes-container{
@@ -684,6 +687,10 @@ hr{
     gap: 30px;
 }
 
+.size-container > p:hover{
+    font-size: 35px;
+}
+
 .clothes-container > .color-container{
     display: flex;
     justify-content: start;
@@ -699,8 +706,12 @@ hr{
     display: flex;
     width: 100%;
     justify-content: start;
-    padding-left: 20px;
-    font-size: 20px;
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+.clothes-container > .size-container > p{
+    margin: 2px;
 }
 
 .clothes-container > p{
@@ -711,11 +722,19 @@ hr{
     display: flex;
     background-color: #10596A;
     color: white;
-    width: 250px;
+    width: 350px;
     height: 50px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-
+    margin: 25px;
 }
+
+.clothes-container > a:hover{
+    background-color: white;
+    color: #10596A;
+}
+
+
 

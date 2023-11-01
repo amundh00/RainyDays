@@ -9,28 +9,41 @@
 </head>
 <body>
 
-    <header>
-        <div id="logo">
-                <a href="index.html">
-                    <img src="Bilder/RainyDays_Logo.png" alt="Rainy days logo"/>
+  <header>
+    <div id="logo">
+            <a href="index.html">
+                <img src="Bilder/RainyDays_Logo.png" alt="Rainy days logo"/>
+            </a>
+    </div>
+            <div id="menu-container">
+                <label for="hamburger-menu">
+                <a class="cartbutton" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-        </div>
-                <div id="menu-container">
-                    <label for="hamburger-menu">
-                      <i class="fas fa-bars"></i>
-                    </label>
-                    <input type="checkbox" id="hamburger-menu">
-                    <nav>
-                      <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="jacketlist.html">Men's</a></li>
-                          <li><a href="jacketlist.html">Womens's</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-    </header>
+                  <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" id="hamburger-menu">
+                <nav>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="jacketlist.html">Men's</a></li>
+                      <li><a href="jacketlist.html">Womens's</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <a id="cartmenu" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                  </ul>
+                </nav>
+              </div>
+            <div class="search-container">
+                <div>
+                    <input type="text" placeholder="..." class="search-bar" required>
+                    <a class="search-icon" href="jacketlist.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    
+                </div>
+            </div>
+</header>
     <main class="main-index">
       <nav class="crumbs">
         <ol>

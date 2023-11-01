@@ -87,10 +87,14 @@ nav > ul > li > a {
     margin: 3px 0;
 }
 
+#cartmenu{
+    display: none;
+    margin-right: 30px;
+}
+
 .fa-cart-shopping{
     color: black;
     font-size: 1.8rem;
-    margin-right: 10px;
 }
 
 .search-bar{
@@ -104,10 +108,17 @@ nav > ul > li > a {
 .fa-cart-shopping{
     color: #10596A;
     display: none;
-    margin: 20px;
+}
+
+.cartbutton{
+    margin-right: 10px;
 }
 
 @media (min-width: 890px){
+
+    #cartmenu{
+        display: flex;
+    }
 
     .fa-cart-shopping{
         display: flex;
@@ -654,6 +665,17 @@ li.crumb a::after{
 Jacket specific
 ********************/
 
+.price{
+    font-size: 1.2em;
+    display: flex;
+    align-items: start;
+    margin: 0;
+}
+
+.clothes-container > p{
+    margin: 0;
+}
+
 hr{
     width: 90%;
     background: black;  
@@ -685,6 +707,7 @@ hr{
     grid-template-columns: auto auto auto auto;
     width: 30px;
     gap: 30px;
+    cursor: pointer;
 }
 
 .size-container > p:hover{
@@ -735,6 +758,10 @@ hr{
     background-color: white;
     color: #10596A;
 }
+
+/********************
+        cart
+********************/
 
 
 

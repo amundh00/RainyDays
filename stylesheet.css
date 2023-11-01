@@ -764,4 +764,98 @@ hr{
 ********************/
 
 
+.cart-form{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
 
+.cart-form > form{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.cart-form > form > input{
+    border: solid 1px black;
+    width: 300px;
+    padding-top: 10px;
+    margin: 10px 0 10px 0;
+    color: black;
+    background-color: transparent;
+}
+
+.checkout-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.checkout-box > a{
+    background-color: #10596A;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
+    width: 100px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.checkout-box > a:hover{
+    background-color: white;
+    color: #10596A;
+}
+
+.cart-info > img{
+    width: 100px;
+    height: 100%;
+}
+
+.checkout-box > div > hr{
+    height: 1px;
+    width: 100px;
+}
+
+.checkout-box > p{
+    margin: 5px;
+    padding: 0;
+}
+
+.cart-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.cart-info > div{
+    padding: 20px;
+}
+
+.cart-info > div > p{
+    padding: 0;
+    margin: 0;
+}
+
+.checkout-box > div > h2,p{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-box > hr{
+    margin: 0;
+}

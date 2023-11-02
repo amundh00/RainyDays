@@ -306,7 +306,7 @@ nav > ul > li > a {
     height: 420px;
 }
 
-h1{
+.slogan{
     position: absolute;
     top: 45%;
     left: 50%;
@@ -706,13 +706,11 @@ hr{
     color: black;
     display: flex;
     font-size: 1.2em;
-
 }
 
 .size-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    width: 30px;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
     cursor: pointer;
 }
@@ -753,7 +751,7 @@ hr{
     padding: 20px;
 }
 
-.clothes-container > a{
+.clothes-container > div > a{
     display: flex;
     background-color: #10596A;
     color: white;
@@ -805,7 +803,7 @@ hr{
         justify-content: center;
         align-items: center;
         background-color: #D9D9D9;
-        width: 90%;
+        width: 800px;
         margin: 15px;
         border-radius: 25px;
     }
@@ -813,7 +811,33 @@ hr{
     .jacket-colorsize{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .jacket-name{
+        display: flex;
+        align-items: start;
+        margin-left: 50px;
+    }
+
+    .jacket-colorsize > div > img{
+        display: flex;
+        width: 900px;
+        margin: 30px;
+        height: 900%;
+    }
+
+    .jacket-info{
+        width: 500px;
+    }
+
+    .jacket-info > div{
+        justify-content: start;
+    }
+
+
+
 }
 
 /********************
@@ -882,7 +906,6 @@ hr{
 
 .cart-info > img{
     width: 100px;
-    height: 100%;
 }
 
 .checkout-box > div > hr{
@@ -927,29 +950,39 @@ hr{
     text-align: center;
 }
 
-
+.cart-form > p{
+    display: flex;
+    margin-left: 20%;
+    width: 300px;
+}
 
 
 @media (min-width: 576px){
 
-    .cart-form{
+    .cart-main{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: row;
     }
 
     .checkout-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
-    background-color: #D9D9D9;
-    width: 50%;
-    margin-left: 10%;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        background-color: #D9D9D9;
+        width: 50%;
+        margin-left: 10%;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .cart-form > p{
+        display: flex;
+        width: 300px;
+        margin-left: 5%;
+    }
 
 }
 

@@ -787,6 +787,20 @@ hr{
     scale: 2.5;
 }
 
+@media (min-width: 1000px){
+
+    .clothes-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        width: 90%;
+        margin: 15px;
+        border-radius: 25px;
+    }
+}
+
 /********************
         cart
 ********************/

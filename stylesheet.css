@@ -231,7 +231,7 @@ nav > ul > li > a {
     height: 150px;
 }
 
-h1{
+.slogan{
     position: absolute;
     display: block;
     top: 50%;
@@ -695,11 +695,18 @@ hr{
     border-radius: 25px;
 }
 
-.clothes-container > img{
+.clothes-container > div > img{
     display: flex;
     width: 300px;
     margin: 30px;
     height: 300px;
+}
+
+.jacket-name{
+    color: black;
+    display: flex;
+    font-size: 1.2em;
+
 }
 
 .size-container{
@@ -757,6 +764,27 @@ hr{
 .clothes-container > a:hover{
     background-color: white;
     color: #10596A;
+}
+
+.jacket-info{
+    padding: 20px;
+}
+
+.jacket-info > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.jacket-info > div > p{
+ width: 300px;
+ 
+}
+
+.jacket-info > div > i{
+    scale: 2.5;
 }
 
 /********************
@@ -871,6 +899,8 @@ hr{
 }
 
 
+
+
 @media (min-width: 576px){
 
     .cart-form{
@@ -892,4 +922,22 @@ hr{
     margin-top: 30px;
 }
 
+}
+
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.checkout-container > div > i{
+    scale: 4;
+}
+
+.checkout-container > div:nth-last-child(1){
+    text-align: left;
 }

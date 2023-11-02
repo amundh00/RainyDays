@@ -695,7 +695,7 @@ hr{
     border-radius: 25px;
 }
 
-.clothes-container > div > img{
+.clothes-container > div > div > img{
     display: flex;
     width: 300px;
     margin: 30px;
@@ -717,8 +717,13 @@ hr{
     cursor: pointer;
 }
 
+.size-container > p{
+    font-size: 20px;
+    height: 30px;
+}
+
 .size-container > p:hover{
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .clothes-container > .color-container{
@@ -785,6 +790,11 @@ hr{
 
 .jacket-info > div > i{
     scale: 2.5;
+    margin: 15px;
+}
+
+.jacket-info > p{
+    margin: 25px;
 }
 
 @media (min-width: 1000px){
@@ -798,6 +808,11 @@ hr{
         width: 90%;
         margin: 15px;
         border-radius: 25px;
+    }
+
+    .jacket-colorsize{
+        display: flex;
+        flex-direction: column;
     }
 }
 

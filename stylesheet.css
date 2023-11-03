@@ -764,7 +764,7 @@ hr{
     margin: 25px;
 }
 
-.clothes-container > a:hover{
+.clothes-container > div > a:hover{
     background-color: white;
     color: #10596A;
 }
@@ -803,7 +803,7 @@ hr{
         justify-content: center;
         align-items: center;
         background-color: #D9D9D9;
-        width: 800px;
+        width: 90%;
         margin: 15px;
         border-radius: 25px;
     }
@@ -836,7 +836,18 @@ hr{
         justify-content: start;
     }
 
+    .jacket-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .clothes-container > div > div > img{
+        display: flex;
+        width: 500px;
+        margin: 30px;
+        height: 100%;
+    }
 
 }
 

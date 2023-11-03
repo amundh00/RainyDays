@@ -995,6 +995,10 @@ hr{
         margin-left: 5%;
     }
 
+    .checkout-container > div > h2{
+        justify-content: left;
+    }
+
 }
 
 .checkout-container{

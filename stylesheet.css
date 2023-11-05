@@ -786,6 +786,11 @@ hr{
 }
 
 .jacket-info > div{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.jacket-info > div{
     display: flex;
     justify-content: space-between;
     gap: 30px;

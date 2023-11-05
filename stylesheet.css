@@ -1037,3 +1037,9 @@ hr{
 .checkout-container > div:nth-last-child(1){
     text-align: left;
 }
+
+.jackettitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

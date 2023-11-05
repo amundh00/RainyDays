@@ -16,7 +16,7 @@
                 </a>
         </div>
                 <div id="menu-container">
-                    <label for="hamburger-menu">
+                    <label for="hamburger-menu" aria-label="Site navigation menu">
                     <a class="cartbutton" href="cart.html">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
@@ -34,11 +34,12 @@
                       </ul>
                     </nav>
                   </div>
-                <a id="cartmenu" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="cartmenu" aria-label="Shopping Cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <div class="search-container">
                     <div>
-                        <input type="text" placeholder="..." class="search-bar" required>
-                        <a class="search-icon" href="jacketlist.html">
+                        <label for="sitesearch" class="sr-only">Search</label>
+                        <input type="text" id="sitesearch" placeholder="..." class="search-bar" required>
+                        <a class="search-icon" aria-label="Site Search bar" href="jacketlist.html">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                         

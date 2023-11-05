@@ -280,8 +280,20 @@ nav > ul > li > a {
     color: #10596A;
 }
 
+.topsellers{
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media (min-width: 768px){
+
+.topsellers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .heropicture{
     height: 550px;

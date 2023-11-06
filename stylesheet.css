@@ -131,7 +131,7 @@ nav > ul > li > a {
 
     .search-icon{
         display: block;
-        align-items: right;
+        align-items: end;
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
@@ -163,7 +163,7 @@ nav > ul > li > a {
         }
         to{
             width: 150px;
-            height: px;
+            height: 28px;
         }
     }
 
@@ -213,7 +213,7 @@ nav > ul > li > a {
 .heropicture{
     text-align: center;
     position: relative;
-    margin-top: 0c;
+    margin-top: 0;
     width: 100%;
     overflow: hidden;
 }
@@ -509,7 +509,6 @@ h2{
     justify-content: space-between;
     width: 130px;
     margin: 5px;
-    align-self: left;
 }
 
 .color-container > div{
@@ -663,7 +662,7 @@ li.crumb a::after{
 @media (min-width: 756px){
     .about-text{
         margin: 50px 150px 50px 150px;
-        font-size: 1cem;
+        font-size: 1em;
     }
 }
 
@@ -805,7 +804,7 @@ hr{
 }
 
 .jacket-info > div > i{
-    scale: 2.5;
+    font-size: 2em;
     margin: 15px;
 }
 
@@ -998,7 +997,7 @@ hr{
         display: flex;
         flex-direction: column;
         justify-content: right;
-        align-items: right;
+        align-items: center;
         background-color: #D9D9D9;
         width: 50%;
         margin-left: 10%;
@@ -1027,10 +1026,6 @@ hr{
     text-align: center;
     margin: 50px;
 
-}
-
-.checkout-container > div > i{
-    scale: 4;
 }
 
 .checkout-container > div:nth-last-child(1){

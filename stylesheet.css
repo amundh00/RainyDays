@@ -432,46 +432,6 @@ h2{
     ;
 }
 
-@media (min-width: 576px){
-    .contactsheet{
-        width: 100%;
-        height: 100%;
-        padding-top: 50px;
-        margin-bottom: 50px;
-        background-image: linear-gradient(rgba(0,0,0,0.7), #10596A), url(Bilder/herohome.jpg) ;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .contacttext{
-        color: white;
-        width: 400px;
-        margin: 0px 200px;
-        height: 90%;
-        text-align: left;
-        justify-content: center;
-        font-size: 1.2em;
-    }
-
-    .contactsheet > form{
-        width: 90%;
-        max-width: 600px;
-    }
-
-    form{
-        width: 90%;
-        max-width: 600px;
-    }
-
-    .contactsheet > form{
-        margin-right: 200px;
-    }
-}
-
 /*Jacket Cards*/
 
 
@@ -522,25 +482,6 @@ h2{
 .color-container > div:hover{
     border: solid black;
     box-sizing: border-box;
-}
-
-@media (min-width: 576px){
-    .jackets{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-
-    .jackets > .jacket-container{
-        display: grid;
-        grid-template-columns:  auto auto ;
-        grid-template-rows: auto auto;
-        width: 300px;
-        gap: 20px;
-    }
-
-    .jacket-container{
-        margin: 25px;
-    }
 }
 
 
@@ -601,25 +542,6 @@ footer form button{
     background-color: white;
 }
 
-@media (min-width: 850px){
-    footer{
-        display: flex;
-        flex-direction: row;
-    }
-    footer > div{
-        text-align: center;
-        margin: 50px;
-    }
-
-    footer form input{
-        width: 350px;
-    }
-
-    footer form button{
-        width: 370px;
-    }
-}
-
 /*Crumbs*/
 
 .crumbs{
@@ -655,22 +577,6 @@ li.crumb a::after{
 
 .about-text > p{
     text-align: left;
-}
-
-
-
-@media (min-width: 756px){
-    .about-text{
-        margin: 50px 150px 50px 150px;
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 1200px){
-    .about-text{
-        margin: 50px 250px 50px 250px;
-        font-size: 1.5em;
-    }
 }
 
 /********************
@@ -812,61 +718,7 @@ hr{
     margin: 25px;
 }
 
-@media (min-width: 1000px){
 
-    .clothes-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #D9D9D9;
-        width: 90%;
-        margin: 15px;
-        border-radius: 25px;
-    }
-
-    .jacket-colorsize{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .jacket-name{
-        display: flex;
-        align-items: start;
-        margin-left: 50px;
-    }
-
-    .jacket-colorsize > div > img{
-        display: flex;
-        width: 900px;
-        margin: 30px;
-        height: 900%;
-    }
-
-    .jacket-info{
-        width: 500px;
-    }
-
-    .jacket-info > div{
-        justify-content: start;
-    }
-
-    .jacket-main{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .clothes-container > div > div > img{
-        display: flex;
-        width: 500px;
-        margin: 30px;
-        height: 100%;
-    }
-
-}
 
 /********************
         cart
@@ -984,9 +836,41 @@ hr{
     width: 300px;
 }
 
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.checkout-container > div:nth-last-child(1){
+    text-align: left;
+}
+
+.jackettitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 
 @media (min-width: 576px){
-
+    
+    /***************
+         Cart
+    ***************/
+    
     .cart-main{
         display: flex;
         justify-content: center;
@@ -1016,33 +900,158 @@ hr{
         justify-content: left;
     }
 
+    /****************
+        Jackets
+    ****************/
+    
+    .jackets{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .jackets > .jacket-container{
+        display: grid;
+        grid-template-columns:  auto auto ;
+        grid-template-rows: auto auto;
+        width: 300px;
+        gap: 20px;
+    }
+
+    .jacket-container{
+        margin: 25px;
+    }
+
+    /***************
+    Contact Sheet
+    ***************/
+
+    .contactsheet{
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        background-image: linear-gradient(rgba(0,0,0,0.7), #10596A), url(Bilder/herohome.jpg) ;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contacttext{
+        color: white;
+        width: 400px;
+        margin: 0px 200px;
+        height: 90%;
+        text-align: left;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    .contactsheet > form{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    form{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .contactsheet > form{
+        margin-right: 200px;
+    }
+
 }
 
-.checkout-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 50px;
+@media (min-width: 1000px){
+
+    .clothes-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        width: 90%;
+        margin: 15px;
+        border-radius: 25px;
+    }
+
+    .jacket-colorsize{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jacket-name{
+        display: flex;
+        align-items: start;
+        margin-left: 50px;
+    }
+
+    .jacket-colorsize > div > img{
+        display: flex;
+        width: 900px;
+        margin: 30px;
+        height: 900%;
+    }
+
+    .jacket-info{
+        width: 500px;
+    }
+
+    .jacket-info > div{
+        justify-content: start;
+    }
+
+    .jacket-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clothes-container > div > div > img{
+        display: flex;
+        width: 500px;
+        margin: 30px;
+        height: 100%;
+    }
+
+    .about-text{
+        margin: 50px 150px 50px 150px;
+        font-size: 1em;
+    }
+
+    /********
+    FOOTER
+    ********/
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    footer > div{
+        text-align: center;
+        margin: 50px;
+    }
+
+    footer form input{
+        width: 350px;
+    }
+
+    footer form button{
+        width: 370px;
+    }
 
 }
 
-.checkout-container > div:nth-last-child(1){
-    text-align: left;
-}
+@media (min-width: 1200px){
+    
+    .about-text{
+        margin: 50px 250px 50px 250px;
+        font-size: 1.5em;
+    }
 
-.jackettitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sr-only{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
 }

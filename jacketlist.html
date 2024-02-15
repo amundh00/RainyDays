@@ -7,6 +7,8 @@
     <meta name="description" content="List of Jackets and wear on the rainy days website">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/e589204446.js" crossorigin="anonymous"></script>
+    <script src="Javascript/jacketList.js" defer></script>
+    <script src="Javascript/utils.js" defer></script>
     
 </head>
 <body>
@@ -28,8 +30,7 @@
                 <nav>
                   <ul>
                       <li><a href="index.html">Home</a></li>
-                      <li><a href="jacketlist.html">Men's</a></li>
-                      <li><a href="jacketlist.html">Womens's</a></li>
+                      <li><a href="jacketlist.html">Clothes</a></li>
                       <li><a href="about.html">About</a></li>
                       <li><a href="contact.html">Contact</a></li>
                       
@@ -39,7 +40,7 @@
             <a id="cartmenu" aria-label="Shopping Cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
 </header>
 
-<main class="main-index">
+<main id="jacket-main">
 
       <nav class="crumbs">
         <ol>
@@ -47,12 +48,13 @@
             <li class="crumb"><a href="jacketlist.html">Jackets</a></li>
         </ol>
       </nav>
+      
       <h1 class="jackettitle">Jackets</h1>
 
       <div class="jacketlist-container">
         <div id="productList"></div>
       </div>
-      <script src="Javascript/script.js" defer></script>
+
 </main>
 
   <footer>

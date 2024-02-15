@@ -434,61 +434,47 @@ h2{
 
 /*Jacket Cards*/
 
+.jacketlist-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-.jacket-container{
+.product-image{
+    width: 150px;
+    height: auto;
+}
+
+#productList{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(4, auto);
+    gap: 50px;
+}
+
+.product-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #D9D9D9;
-    height: auto;
-    margin: 25px auto;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
+    background-color: lightgray;
+    width: 100%;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Added transition property */
 }
 
-.jacket-container > div > a > img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: auto;
-}
-
-.jacket-container > div > a > p{
-    text-decoration: none;
-    color: black; 
-    text-align: left;
-    margin: 5px 0 5px 10px;
-}
-
-.color-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 130px;
-    margin: 5px;
-}
-
-.color-container > div{
-    width: 30px;
-    height: 30px;
-    background-color: #10596A;
-    border-radius: 50%;
-    margin: 0 0 0 0px;
-}
-
-.color-container > div:hover{
-    border: solid black;
-    box-sizing: border-box;
+.product-card:hover {
+    transform: scale(1.1); /* Changed from 'scale' to 'transform: scale' */
 }
 
 
 /*Footer*/
 
 footer{
-    margin-top: 0px;
+    margin-top: 150px;
     padding: 10px 15%;
     background-color: #D9D9D9;
     color: black;
@@ -900,27 +886,6 @@ hr{
         justify-content: left;
     }
 
-    /****************
-        Jackets
-    ****************/
-    
-    .jackets{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-
-    .jackets > .jacket-container{
-        display: grid;
-        grid-template-columns:  auto auto ;
-        grid-template-rows: auto auto;
-        width: 300px;
-        gap: 20px;
-    }
-
-    .jacket-container{
-        margin: 25px;
-    }
-
     /***************
     Contact Sheet
     ***************/
@@ -963,33 +928,22 @@ hr{
         margin-right: 200px;
     }
 
+    /*************
+    Jacket list
+    *************/
+
+    #productList{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(4, auto);
+        gap: 50px;
+    }
+
 }
 
 @media (min-width: 1000px){
 
-    .clothes-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #D9D9D9;
-        width: 90%;
-        margin: 15px;
-        border-radius: 25px;
-    }
 
-    .jacket-colorsize{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .jacket-name{
-        display: flex;
-        align-items: start;
-        margin-left: 50px;
-    }
 
     .jacket-colorsize > div > img{
         display: flex;
@@ -1032,21 +986,36 @@ hr{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100%;
+    }
+
+    .product-image{
+        width: 200px;
+        height: auto;
     }
 
     #productList{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(4, auto);
-        gap: 10px;
+        gap: 100px;
     }
 
-    .product-card{
+    .product-card {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        background-color: #10596A;
+        background-color: lightgray;
         width: 100%;
+        padding: 5px;
+        color: black;
+        border-radius: 5px;
+        transition: transform 0.3s ease; /* Added transition property */
+    }
+    
+    .product-card:hover {
+        transform: scale(1.1); /* Changed from 'scale' to 'transform: scale' */
     }
 
     /********

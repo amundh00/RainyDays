@@ -11,16 +11,15 @@ const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
                 const productListElement = document.getElementById('productList');
                 console.log(productListElement);
 
-                // Loop through each product in the API response
+              
                 data.forEach(product => {
                     const productCard = document.createElement('div');
                     productCard.className = 'product-card';
 
                     productCard.innerHTML = `
-                        <h3>${product.title}</h3>
-                        <p>${product.description}</p>
-                        <p>Price: ${product.onSale ? product.discountedPrice : product.price}</p>
                         <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
+                        <h3>${product.title}</h3>
+                        <p>Price: ${product.onSale ? product.discountedPrice : product.price}</p> 
                     `;
 
                     productListElement.appendChild(productCard);
@@ -29,5 +28,3 @@ const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
-
-

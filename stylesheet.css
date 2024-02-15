@@ -1024,6 +1024,31 @@ hr{
         font-size: 1em;
     }
 
+    /************
+    Jacket list
+    ************/
+
+    .jacketlist-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #productList{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+
+    .product-card{
+        display: flex;
+        flex-direction: column;
+        background-color: #10596A;
+        width: 100%;
+    }
+
     /********
     FOOTER
     ********/

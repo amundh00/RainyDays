@@ -1,47 +1,24 @@
-const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
+import { listData } from "./utils.js";
 
-async function fetchData() {
-  try {
-    const response = await fetch(apiUrl);
-    
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+let collection = [];
+const outElement = document.getElementById("productList");
+
+async function collectCards() {
+    try {
+        const api = `https://v2.api.noroff.dev/rainy-days`;
+        const response = await fetch(api);
+        const data = await response.json();
+        
+        collection = data.data; 
+        
+        listData(collection, outElement);
+    } catch (error) {
+        console.error('Could not fetch data:', error);
+        outElement.innerHTML = `Could not fetch data...`;
     }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return null;
-  }
 }
 
-async function displayData() {
-  try {
-    const data = await fetchData();
-    if (!data) return;
+console.log(collection); // Add this line to inspect the 'collection' variable
+listData(collection, outElement);
 
-    const productListElement = document.getElementById('productList');
-
-    data.forEach(product => {
-      const productCard = document.createElement('a');
-      productCard.href = 'jacketspecific.html'; // Link to jacketspecific.html
-      productCard.className = 'product-card';
-
-      productCard.innerHTML = `
-        <img class="product-image" src="${product.image}" alt="${product.image.alt}">
-        <h3>${product.title}</h3>
-        <p>Price: ${product.onSale ? product.discountedPrice : product.price} USD</p> 
-      `;
-
-      productListElement.appendChild(productCard);
-    });
-  } catch (error) {
-    console.error('Error displaying data:', error);
-  }
-}
-
-// Call the displayData function
-displayData();
-
-
+collectCards();

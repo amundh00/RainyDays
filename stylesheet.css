@@ -1006,11 +1006,14 @@ hr{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: lightgray;
+        background-color: white;
         width: 100%;
         padding: 5px;
         color: black;
         border-radius: 5px;
+        -webkit-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+        -moz-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+        box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
         transition: transform 0.3s ease; /* Added transition property */
     }
     

@@ -18,7 +18,7 @@ async function collectCards() {
     }
 }
 
-console.log(collection); // Add this line to inspect the 'collection' variable
-listData(collection, outElement);
+//console.log(collection);
+//listData(collection, outElement);
 
 collectCards();

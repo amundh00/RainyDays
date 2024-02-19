@@ -7,11 +7,10 @@ let id = params.get("id");
 async function getJacket() {
     try {
         const api = `https://v2.api.noroff.dev/rainy-days/?id=${id}`;
-        //console.log(api);
         const response = await fetch(api);
-        //console.log(response);
         const data = await response.json();
-        //console.log("Data:", data);
+
+        
         listFullJacket (data.data, outElement);
     } catch (error) {
         outElement.innerHTML = `Could not fetch data...`;
@@ -20,9 +19,10 @@ async function getJacket() {
 
 getJacket();
 
-function listFullJacket(card, out) {
+
+function listFullJacket(product, out) {
     //console.log(card);
-    document.title = card.tiitle;
+    document.title = product.title;
     document.querySelector("h1").innerHTML = card.name;
     let newDiv = `<div class="product-card">
     <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">

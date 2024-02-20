@@ -1,35 +1,35 @@
-const outElement = document.getElementById("jacket-main");
-
+let mainJacketPage = document.querySelector("main.jacket-main");
+let jacketById = [];
 
 let params = new URL(document.location).searchParams;
-let id = params.get("id"); 
+let id = params.get("id");
 
-async function getJacket() {
-    try {
-        const api = `https://v2.api.noroff.dev/rainy-days/?id=${id}`;
+async function getJacketById() {
+    try{
+        const api = `https://v2.api.noroff.dev/rainy-days/${id}`;
         const response = await fetch(api);
         const data = await response.json();
 
-        
-        listFullJacket (data.data, outElement);
+        jacketById = data.data;
+        console.log(jacketById);
+        makeJacketPage(jacketById, mainJacketPage); 
     } catch (error) {
-        outElement.innerHTML = `Could not fetch data...`;
+        mainJacketPage.innerHTML = `<p>Ingen Jakke å vise hær Lasse</p>`;
     }
 }
 
-getJacket();
+getJacketById();
 
 
-function listFullJacket(product, out) {
-    //console.log(card);
-    document.title = product.title;
-    document.querySelector("h1").innerHTML = card.name;
-    let newDiv = `<div class="product-card">
-    <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
-    <h2>${product.title}</h2>
-    <p>Price: $${product.price}</p>
-    <span>Read More</span>
-    </div>`;
-    //console.log(newDiv);
-    out.innerHTML = newDiv;
+function makeJacketPage(api, output) {
+    // Anta at api inneholder produktdataene og tilordne det til product
+    let product = api; // Denne linjen kan tilpasses basert på den faktiske strukturen av `api`
+
+    output.innerHTML = `
+    <div class="jacket-detail">
+        <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
+        <h2>${product.title}</h2>
+        <p>Price: $${product.price}</p>
+    </div>
+    `;
 }

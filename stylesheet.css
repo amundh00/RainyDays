@@ -442,7 +442,7 @@ h2{
 }
 
 .product-image{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
@@ -453,28 +453,43 @@ h2{
     gap: 50px;
 }
 
+.jacket-price{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 .product-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: lightgray;
-    width: 100%;
+    background-color: white;
+    width: 250px;
+    height: 400px;
     padding: 5px;
     color: black;
     border-radius: 5px;
-    transition: transform 0.3s ease; /* Added transition property */
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover {
     transform: scale(1.1); /* Changed from 'scale' to 'transform: scale' */
 }
 
+.jacketList-main{
+    margin-bottom: 150px;
+}
+
+
+
 
 /*Footer*/
 
 footer{
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 10px 15%;
     background-color: #D9D9D9;
     color: black;
@@ -526,31 +541,6 @@ footer form button{
 .col-1 a:hover{
     color: #10596A;
     background-color: white;
-}
-
-/*Crumbs*/
-
-.crumbs{
-    display: inline-block;
-    margin-left: 15px;
-}
-
-nav.crumbs ol{
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li.crumb{
-    display: inline-block;
-}
-
-li.crumb a::after{
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 0.8em;
-    font-weight: bold;
-    padding: 0 1px 0 7px;
 }
 
 /*About us*/
@@ -939,6 +929,8 @@ hr{
         gap: 50px;
     }
 
+
+
 }
 
 @media (min-width: 1000px){
@@ -964,6 +956,7 @@ hr{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: auto;
     }
 
     .clothes-container > div > div > img{
@@ -1000,7 +993,9 @@ hr{
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(4, auto);
         gap: 50px;
+        margin: 50px;
     }
+
 
     .product-card {
         display: flex;
@@ -1064,6 +1059,20 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .legg-i-handlekurv{
+        background-color: #10596A;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        border: solid 2px white;
+    }
+
+    .legg-i-handlekurv:hover{
+        background-color: white;
+        color: #10596A;
+        border: solid 2px #10596A;
     }
 
     /********

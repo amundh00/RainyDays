@@ -35,7 +35,8 @@ function makeJacketPage(api, output) {
                 <p>Color: ${product.baseColor}</p>
                 <p>Gender: ${product.gender}</p>
             </span>
-            <p>Price: ${product.price} USD</p>
+            <p class="jacket-price">Price: ${product.price} USD</p>
+            <a class="legg-i-handlekurv" id=${api.id} href="./cart.html">Add to cart</a>
         <span>
     </div>`;
 }

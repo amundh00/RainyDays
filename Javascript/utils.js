@@ -13,3 +13,32 @@ export function listData(list, out){
     }
     out.innerHTML = newCards;
 }
+
+/*********
+Cart code
+*********/
+
+export let cart;
+
+export const cartStorage = localStorage.getItem("cart");
+if (!cart) {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart)); 
+} else {
+    cart = JSON.parse(cartStorage);
+}
+
+export function cartListing(id); {
+    let added = false;
+    if (cart.includes(id)) {
+        added = true;
+    }
+    if (added === true) {
+        cart = cart.filter((item) => item !== id);
+    } else {
+        cart.push(id);
+    }
+
+localStorage.setItem("", JSON.stringify(cart));
+//console.log(handlekurv);
+}

@@ -27,9 +27,12 @@ function makeJacketPage(api, output) {
 
     output.innerHTML = `
     <div class="jacket-detail">
-        <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
-        <h2>${product.title}</h2>
-        <p>Price: $${product.price}</p>
+        <img class="jacket-image" src="${product.image.url}" alt="${product.image.alt}">
+        <span class="jacket-info">
+            <h2>${product.title}</h2>
+            <p>${product.description}</p>
+            <p>Price: ${product.price} USD</p>
+        <span>
     </div>
     `;
 }

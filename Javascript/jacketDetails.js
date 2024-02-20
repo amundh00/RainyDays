@@ -31,8 +31,11 @@ function makeJacketPage(api, output) {
         <span class="jacket-info">
             <h2>${product.title}</h2>
             <p>${product.description}</p>
+            <span class="product-details">
+                <p>Color: ${product.baseColor}</p>
+                <p>Gender: ${product.gender}</p>
+            </span>
             <p>Price: ${product.price} USD</p>
         <span>
-    </div>
-    `;
+    </div>`;
 }

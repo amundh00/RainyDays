@@ -1033,9 +1033,9 @@ hr{
         align-items: center;
         flex-direction: row;
         background-color: white;
-        width: 100%;
-        height: 60vh;
-        padding: 5px;
+        width: auto;
+        height: auto;
+        padding: 50px;
         margin: 50px;
         color: black;
         border-radius: 5px;
@@ -1048,6 +1048,15 @@ hr{
     .jacket-image{
         width: 400px;
 
+    }
+
+    .product-details{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product-details > p{
+        margin: 5px;
     }
 
     .jacket-info{

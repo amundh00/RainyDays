@@ -1062,10 +1062,10 @@ hr{
     }
 
     .legg-i-handlekurv{
+        font-size: 20px;
         background-color: #10596A;
         color: white;
-        padding: 5px;
-        border-radius: 5px;
+        padding: 10px;
         border: solid 2px white;
     }
 

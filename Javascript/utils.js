@@ -40,5 +40,5 @@ export function cartListing(id) {
     }
 
 localStorage.setItem("handlekurven", JSON.stringify(cart));
-//console.log(handlekurv);
+console.log(handlekurv);
 }

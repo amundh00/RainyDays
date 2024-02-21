@@ -280,20 +280,7 @@ nav > ul > li > a {
     color: #10596A;
 }
 
-.topsellers{
-    display: flex;
-    flex-direction: column;
-}
-
-
 @media (min-width: 768px){
-
-.topsellers{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 .heropicture{
     height: 550px;
@@ -1018,6 +1005,13 @@ hr{
         transform: scale(1.1); /* Changed from 'scale' to 'transform: scale' */
     }
 
+    /*Homepage*/
+
+    #topSellers{
+        height: auto;
+        padding: 50px;
+    }
+
     /*************
     Jacket Specific
     *************/
@@ -1059,6 +1053,24 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #jacketFilter{
+        background-color: #10596A;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-cta{
+        width: 50px;
+    }
+
+    .filterSystem{
+        display: flex;
+        justify-content: center;
     }
 
     .legg-i-handlekurv{

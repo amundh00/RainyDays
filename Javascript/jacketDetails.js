@@ -11,7 +11,9 @@ async function getJacketById() {
         const data = await response.json();
 
         jacketById = data.data;
-        console.log(jacketById);
+
+        document.title = jacketById.title;
+        //console.log(jacketById);
         makeJacketPage(jacketById, mainJacketPage); 
     } catch (error) {
         mainJacketPage.innerHTML = `<p>Ingen Jakke å vise hær Lasse</p>`;
@@ -22,15 +24,15 @@ getJacketById();
 
 
 function makeJacketPage(api, output) {
-    // Anta at api inneholder produktdataene og tilordne det til product
-    let product = api; // Denne linjen kan tilpasses basert på den faktiske strukturen av `api`
+
+    let product = api;
 
     output.innerHTML = `
     <div class="jacket-detail">
         <img class="jacket-image" src="${product.image.url}" alt="${product.image.alt}">
-        <span class="jacket-info">
-            <h2>${product.title}</h2>
-            <p>${product.description}</p>
+            <span class="jacket-info">
+                <h2>${product.title}</h2>
+                <p>${product.description}</p>
             <span class="product-details">
                 <p>Color: ${product.baseColor}</p>
                 <p>Gender: ${product.gender}</p>

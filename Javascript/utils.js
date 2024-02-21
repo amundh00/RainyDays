@@ -7,15 +7,15 @@ export function listData(list, out){
                             <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
                             <h2>${product.title}</h2>
                             <p>Price: $${product.price}</p>
-                            <span>Read More</span>
+                            <span>View Product</span>
                         </div>
                     </a>`;
     }
     out.innerHTML = newCards;
 }
-/*********
-Filter
-*********/
+
+//Filter System
+
 
 export function filterJackets(jackets, gender) {
     if (gender === 'none') {
@@ -26,9 +26,8 @@ export function filterJackets(jackets, gender) {
 }
 
 
-/*********
-Cart code
-*********/
+//Cart code
+
 
 export let cart;
 

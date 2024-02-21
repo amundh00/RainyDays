@@ -13,6 +13,18 @@ export function listData(list, out){
     }
     out.innerHTML = newCards;
 }
+/*********
+Filter
+*********/
+
+export function filterJackets(jackets, gender) {
+    if (gender === 'none') {
+        return jackets;
+    }   else {
+        return jackets.filter(jacket => jacket.gender === gender);
+    }
+}
+
 
 /*********
 Cart code

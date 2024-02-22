@@ -983,6 +983,13 @@ hr{
         margin: 50px;
     }
 
+    .cartBtn{
+        background-color: #10596A;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
 
     .product-card {
         display: flex;
@@ -1008,6 +1015,11 @@ hr{
     /*Homepage*/
 
     #topSellers{
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: (1, 1fr);
+        gap: 100px;
+        align-items: center;
         height: auto;
         padding: 50px;
     }

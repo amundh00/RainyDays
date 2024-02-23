@@ -45,3 +45,24 @@ document.addEventListener('click', function(event) {
         removeFromCart(event.target.id);
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log(document.getElementById('checkoutKnapp'));
+    document.body.addEventListener('click', function(event) {
+
+    if (event.target.id === 'checkoutKnapp') {
+        event.preventDefault();
+        console.log('check button clicked');
+    }
+
+        var form =document.getElementById('cart-form');
+        if (form.checkValidity()) {
+
+            window.location.href = 'checkout.html';
+        
+        } else {
+            alert('Please fill in all required fields before checkout.');
+            form.querySelector(':invalid').focus();
+        }
+    });
+});

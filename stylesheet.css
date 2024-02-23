@@ -740,6 +740,8 @@ hr{
     width: 300px;
 }
 
+
+
 .checkout-container{
     display: flex;
     flex-direction: column;
@@ -795,6 +797,23 @@ hr{
         -webkit-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
         -moz-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
         box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    }
+
+    .checkoutBtn{
+        text-align: center;
+        background-color: #10596A;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .priceAndCheckout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .cart-form > p{
@@ -963,7 +982,12 @@ hr{
         padding: 15px;
     }
 
+    .cart-card > div{
+        width: 300px;
+    }
+
     .cart-image{
+        margin: 10px;
         width: 100px;
         height: auto;
     }

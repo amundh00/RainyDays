@@ -64,6 +64,7 @@ export function toggleCart() {
 export function listDataToCart(list, out){
     out.innerHTML = "";
     let newCards = "";
+    let totalPrice = 0;
     for (let product of list) {
         newCards += `   <div class="cart-card">
                             <img class="cart-image" src="${product.image.url}" alt="${product.image.alt}">
@@ -73,9 +74,19 @@ export function listDataToCart(list, out){
                             </div>
                             <button class="removeBtn" id=${product.id}>Remove</button>
                         </div>`;
+        totalPrice += parseFloat(product.price);
     }
+    newCards += 
+    `<div class="priceAndCheckout">
+        <h2>Total Price:</h2>
+        <p>USD: ${totalPrice.toFixed(2)}</p>
+        <a id="checkoutKnapp" class="checkoutBtn" href="checkout.html">Checkout</a>
+    </div>`;
+
     out.innerHTML = newCards;
 }
+
+
 
 
 export function makeJacketPage(api, output) {

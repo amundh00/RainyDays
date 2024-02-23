@@ -935,6 +935,14 @@ hr{
         border-radius: 5px;
     }
 
+    .removeBtn{
+        background-color: #10596A;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     .jacket-card-link{
         background-color: #10596A;
         color: white;

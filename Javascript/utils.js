@@ -67,17 +67,14 @@ export function listDataToCart(list, out){
     for (let product of list) {
         newCards += `   <div class="cart-card">
                             <img class="cart-image" src="${product.image.url}" alt="${product.image.alt}">
-                            <h4>${product.title}</h4>
-                            <p>USD: ${product.price}</p>
+                            <div>
+                                <h4>${product.title}</h4>
+                                <p>USD: ${product.price}</p>
+                            </div>
+                            <button class="removeBtn" id=${product.id}>Remove from Cart</button>
                         </div>`;
     }
     out.innerHTML = newCards;
-
-    const btns = document.querySelectorAll("button.cartBtn");
-    for (const btn of btns) {
-        if (cart.includes(btn.id)) btn.style.color = "red";
-        btn.addEventListener("click", toggleCart);
-    }
 
 }
 

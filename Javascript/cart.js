@@ -1,4 +1,5 @@
 import { listDataToCart, cart } from "./utils.js";
+console.log("cart", cart);
 
 const outElement = document.getElementById("checkout-box");
 
@@ -24,3 +25,21 @@ async function addedToCart(cart) {
 }
 
 addedToCart(cart);
+
+
+
+function removeFromCart(ClickedId) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const updatedCart = cart.filter(item => item !== ClickedId);
+
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
+
+    alert("Item removed");
+}
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('removeBtn')) {
+        removeFromCart(event.target.id);
+    }
+});

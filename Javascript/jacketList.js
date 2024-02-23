@@ -32,8 +32,6 @@ async function collectJackets() {
 
 collectJackets();
 
-
-
 /*******
  Sorting
  *******/

@@ -2,14 +2,15 @@ export function listData(list, out){
     out.innerHTML = "";
     let newCards = "";
     for (let product of list) {
-        newCards += `<a href="./jacketspecific.html?id=${product.id} "class="jacket-card-link">
+        newCards += `<div>
                         <div class="product-card">
                             <img class="product-image" src="${product.image.url}" alt="${product.image.alt}">
                             <h2>${product.title}</h2>
                             <p>Price: $${product.price}</p>
+                            <a href="./jacketspecific.html?id=${product.id}" class="jacket-card-link">View Product</a>
                             <button class="cartBtn" id=${product.id}>Add to cart</button>
                         </div>
-                    </a>`;
+                    </div>`;
     }
     out.innerHTML = newCards;
 
@@ -18,8 +19,9 @@ export function listData(list, out){
         if (cart.includes(btn.id)) btn.style.color = "red";
         btn.addEventListener("click", toggleCart);
     }
-
 }
+
+
 
 
 //Cart code
@@ -52,11 +54,31 @@ function toggleCart() {
         console.log(this.id, " is not in the cart");
         // Add it:
         cart.push(this.id);
-        this.style.color = "red";
+        this.style.color = "blue";
     }
     //console.log(favourites);
     localStorage.setItem("cart", JSON.stringify(cart));
  
+}
+
+export function listDataToCart(list, out){
+    out.innerHTML = "";
+    let newCards = "";
+    for (let product of list) {
+        newCards += `   <div class="cart-card">
+                            <img class="cart-image" src="${product.image.url}" alt="${product.image.alt}">
+                            <h4>${product.title}</h4>
+                            <p>USD: ${product.price}</p>
+                        </div>`;
+    }
+    out.innerHTML = newCards;
+
+    const btns = document.querySelectorAll("button.cartBtn");
+    for (const btn of btns) {
+        if (cart.includes(btn.id)) btn.style.color = "red";
+        btn.addEventListener("click", toggleCart);
+    }
+
 }
 
 //Filter System

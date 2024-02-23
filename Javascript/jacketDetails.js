@@ -1,3 +1,5 @@
+
+
 let mainJacketPage = document.querySelector("main.jacket-main");
 let jacketById = [];
 
@@ -22,7 +24,6 @@ async function getJacketById() {
 
 getJacketById();
 
-
 function makeJacketPage(api, output) {
 
     let product = api;
@@ -38,7 +39,7 @@ function makeJacketPage(api, output) {
                 <p>Gender: ${product.gender}</p>
             </span>
             <p class="jacket-price">Price: ${product.price} USD</p>
-            <a class="legg-i-handlekurv" id=${api.id} href="./cart.html">Add to cart</a>
         <span>
+        <button class="cartBtn" id=${product.id}>Add to cart</button>
     </div>`;
 }

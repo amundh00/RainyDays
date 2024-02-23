@@ -1,4 +1,4 @@
-import { listData, cart } from "./utils.js";
+import { listDataToCart, cart } from "./utils.js";
 
 const outElement = document.getElementById("checkout-box");
 
@@ -13,7 +13,7 @@ async function addedToCart(cart) {
             return cart.includes(id);
         });
         if (filtered.length > 0) {
-            listData (filtered, outElement);
+            listDataToCart (filtered, outElement);
         } else {
             outElement.innerHTML = `You have no products added to cart`;
         }

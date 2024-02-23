@@ -47,22 +47,18 @@ document.addEventListener('click', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log(document.getElementById('checkoutKnapp'));
     document.body.addEventListener('click', function(event) {
+        if (event.target.closest('.checkoutBtn')) {
+            event.preventDefault();
 
-    if (event.target.id === 'checkoutKnapp') {
-        event.preventDefault();
-        console.log('check button clicked');
-    }
-
-        var form =document.getElementById('cart-form');
-        if (form.checkValidity()) {
-
-            window.location.href = 'checkout.html';
-        
-        } else {
-            alert('Please fill in all required fields before checkout.');
-            form.querySelector(':invalid').focus();
+            var form = document.getElementById('cartForm');
+            if (form && form.checkValidity()) {
+                window.location.href= 'checkout.html';
+            } else {
+                alert('Please fill in all forms');
+                form && form.querySelector(':invalid').focus();
+            }
         }
     });
 });
+

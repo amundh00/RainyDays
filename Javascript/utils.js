@@ -80,7 +80,7 @@ export function listDataToCart(list, out){
     `<div class="priceAndCheckout">
         <h2>Total Price:</h2>
         <p>USD: ${totalPrice.toFixed(2)}</p>
-        <a id="checkoutKnapp" class="checkoutBtn" href="checkout.html">Checkout</a>
+        <button id="checkoutKnapp" class="checkoutBtn" href="checkout.html">Checkout</button>
     </div>`;
 
     out.innerHTML = newCards;

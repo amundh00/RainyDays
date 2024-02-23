@@ -1,4 +1,4 @@
-
+import { makeJacketPage } from "./utils.js";
 
 let mainJacketPage = document.querySelector("main.jacket-main");
 let jacketById = [];
@@ -15,8 +15,8 @@ async function getJacketById() {
         jacketById = data.data;
 
         document.title = jacketById.title;
-        //console.log(jacketById);
-        makeJacketPage(jacketById, mainJacketPage); 
+
+        makeJacketPage(jacketById, mainJacketPage);
     } catch (error) {
         mainJacketPage.innerHTML = `<p>Ingen Jakke å vise hær Lasse</p>`;
     }
@@ -24,22 +24,4 @@ async function getJacketById() {
 
 getJacketById();
 
-function makeJacketPage(api, output) {
 
-    let product = api;
-
-    output.innerHTML = `
-    <div class="jacket-detail">
-        <img class="jacket-image" src="${product.image.url}" alt="${product.image.alt}">
-            <span class="jacket-info">
-                <h2>${product.title}</h2>
-                <p>${product.description}</p>
-            <span class="product-details">
-                <p>Color: ${product.baseColor}</p>
-                <p>Gender: ${product.gender}</p>
-            </span>
-            <p class="jacket-price">Price: ${product.price} USD</p>
-        <span>
-        <button class="cartBtn" id=${product.id}>Add to cart</button>
-    </div>`;
-}

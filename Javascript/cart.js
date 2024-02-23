@@ -35,7 +35,9 @@ function removeFromCart(ClickedId) {
 
     localStorage.setItem('cart', JSON.stringify(updatedCart));
 
-    alert("Item removed");
+    //alert("Item removed");
+
+    location.reload();
 }
 
 document.addEventListener('click', function(event) {

@@ -9,7 +9,7 @@ async function collectJackets() {
         const api = `https://v2.api.noroff.dev/rainy-days`;
         const response = await fetch(api);
         const data = await response.json();
-        
+
         collection = data.data; 
         
         listData(collection, outElement);

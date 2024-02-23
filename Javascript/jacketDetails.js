@@ -1,4 +1,4 @@
-import { toggleCart } from "./utils.js";
+import { makeJacketPage, toggleCart } from "./utils.js";
 
 let mainJacketPage = document.querySelector("main.jacket-main");
 let jacketById = [];

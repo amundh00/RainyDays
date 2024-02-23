@@ -55,10 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (form && form.checkValidity()) {
                 window.location.href= 'checkout.html';
             } else {
-                alert('Please fill in all forms');
+                alert('Please fill in all forms before Checkout');
                 form && form.querySelector(':invalid').focus();
             }
         }
     });
 });
-

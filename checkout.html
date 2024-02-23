@@ -7,6 +7,8 @@
     <meta name="description" content="Checkout Page on the rainy days website">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/e589204446.js" crossorigin="anonymous"></script>
+    <script type="module" src="Javascript/checkout.js" defer></script>
+    <script type="module" src="Javascript/utils.js" defer></script>
 </head>
 <body>
     <header>
@@ -58,9 +60,11 @@
                     <li>Payment Method: Visa **** 1234</li>
                 </ul>
                 <h2>Items Ordered:</h2>
-                <ul class="orderedItems">
+
+                <ul id="orderedItems">
                     
                 </ul>
+
                 <h2>Shipping Information:</h2>
                 <ul>
                     <li>Your order will be shipped within [2-5 days] to the following address: [Fannrem]</li>

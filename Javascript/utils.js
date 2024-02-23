@@ -127,7 +127,7 @@ export function filterJackets(jackets, gender) {
     }
 }
 
-
+//Checkout functions
 
 
 

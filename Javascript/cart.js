@@ -4,10 +4,17 @@ console.log("cart", cart);
 const outElement = document.getElementById("checkout-box");
 
 async function addedToCart(cart) {
+    if (outElement !== "") {
+        outElement.innerHTML = `<div class="loading">Loading...</div>`;
+
     try {
         const api = `https://v2.api.noroff.dev/rainy-days`;
         const response = await fetch(api);
         const data = await response.json();
+
+        setTimeout(() => {
+            listData(collection, outElement);
+        }, 2000);
 
         let filtered = data.data.filter((item)=>{
             let id = item.id;
@@ -22,6 +29,7 @@ async function addedToCart(cart) {
         //console.error(error.message);
         outElement.innerHTML = `Could not fetch data`;
     }
+}
 }
 
 addedToCart(cart);

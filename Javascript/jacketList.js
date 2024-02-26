@@ -5,6 +5,9 @@ const outElement = document.getElementById("productList");
 const filter = document.getElementById('jacketFilter');
 
 async function collectJackets() {
+    if (outElement !== "") {
+        outElement.innerHTML = `<div class="loading">Loading...</div>`;
+
     try {
         const api = `https://v2.api.noroff.dev/rainy-days`;
         const response = await fetch(api);
@@ -13,6 +16,10 @@ async function collectJackets() {
         collection = data.data; 
         
         listData(collection, outElement);
+
+        setTimeout(() => {
+            listData(collection, outElement);
+        }, 2000);
 
         filter.addEventListener('change', () => {
           const selectedGender = filter.value;
@@ -25,6 +32,7 @@ async function collectJackets() {
         //console.error('Could not fetch data:', error);
         outElement.innerHTML = `Could not fetch data...`;
     }
+}
 }
 
 //console.log(collection);

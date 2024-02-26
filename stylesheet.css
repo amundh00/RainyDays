@@ -546,142 +546,52 @@ footer form button{
 Jacket specific
 ********************/
 
-.price{
-    font-size: 1.2em;
+.jacket-detail{
     display: flex;
-    align-items: start;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 50px;
+    margin: 50px;
+    color: black;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.39);
+    transition: transform 0.3s ease;
 }
 
-.clothes-container > p{
-    margin: 0;
+.jacket-image{
+    width: 200px;
+
 }
 
-hr{
-    width: 90%;
-    background: black;  
-    border: solid 1px #000;
-    border-radius: 20px;
-    margin: 10px;
+.product-details{
+    display: flex;
+    flex-direction: row;
 }
 
-.clothes-container{
+.product-details > p{
+    margin: 5px;
+}
+
+.jacket-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
-    width: 90%;
-    margin: 15px;
-    border-radius: 25px;
 }
 
-.clothes-container > div > div > img{
-    display: flex;
-    width: 300px;
-    margin: 30px;
-    height: 300px;
-}
-
-.jacket-name{
-    color: black;
-    display: flex;
-    font-size: 1.2em;
-}
-
-.size-container{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    cursor: pointer;
-}
-
-.size-container > p{
-    font-size: 20px;
-    height: 30px;
-}
-
-.size-container > p:hover{
-    font-size: 25px;
-}
-
-.clothes-container > .color-container{
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    padding-left: 20px;
-}
-
-.clothes-container > .color-container > div{
-    margin: 10px;
-}
-
-.clothes-container > .size-container{
-    display: flex;
-    width: 100%;
-    justify-content: start;
-    padding-left: 40px;
-    font-size: 25px;
-}
-
-.clothes-container > .size-container > p{
-    margin: 2px;
-}
-
-.clothes-container > p{
-    padding: 20px;
-}
-
-.clothes-container > div > a{
-    display: flex;
+.cartBtn{
     background-color: #10596A;
-    color: white;
-    width: 350px;
-    height: 50px;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin: 25px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
-
-.clothes-container > div > a:hover{
-    background-color: white;
-    color: #10596A;
-}
-
-.jacket-info{
-    padding: 20px;
-}
-
-.jacket-info > div{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.jacket-info > div{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-    flex-direction: row;
-}
-
-.jacket-info > div > p{
- width: 300px;
- 
-}
-
-.jacket-info > div > i{
-    font-size: 2em;
-    margin: 15px;
-}
-
-.jacket-info > p{
-    margin: 25px;
-}
-
-
 
 /********************
         cart
@@ -740,7 +650,15 @@ hr{
     width: 300px;
 }
 
-
+#topSellers{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (1, 1fr);
+    gap: 100px;
+    align-items: center;
+    height: auto;
+    padding: 50px;
+}
 
 .checkout-container{
     display: flex;
@@ -769,6 +687,20 @@ hr{
     width:1px;
     height:1px;
     overflow:hidden;
+}
+
+#jacketFilter{
+    background-color: #10596A;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.filterSystem{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 576px){
@@ -1077,14 +1009,16 @@ hr{
         text-align: center;
     }
 
-    .card-cta{
-        width: 50px;
-    }
-
     .filterSystem{
         display: flex;
         justify-content: center;
     }
+
+    .card-cta{
+        width: 50px;
+    }
+
+   
 
     .legg-i-handlekurv{
         font-size: 20px;

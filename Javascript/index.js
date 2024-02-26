@@ -17,7 +17,7 @@ async function collectJackets() {
 
         listData(selectedJackets, outElement);
     } catch(error) {
-        console.error('Could not fetch data:', error);
+        //console.error('Could not fetch data:', error);
         outElement.innerHTML = `Could not fetch data...`;
     }
 }

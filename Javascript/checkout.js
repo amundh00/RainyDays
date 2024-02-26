@@ -1,33 +1,50 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cartStorage = localStorage.getItem("cart");
-    const cart = cartStorage ? JSON.parse(cartStorage) : [];
+import { listCartToCheckout, cart, saveFormData } from "./utils.js";
 
-    if (cart.length > 0) {
-        const orderedItemsElement = document.getElementById('orderedItems');
 
-        const fetchPromises = cart.map(id => {
-            return fetch(`https://v2.api.noroff.dev/rainy-days/${id}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .catch(error => console.error('Fetching error:', error));
+const out = document.getElementById("orderedItems");
+
+async function cartToCheckout(cart) {
+    try{
+        const api = `https://v2.api.noroff.dev/rainy-days`;
+        const response = await fetch(api);
+        const data = await response.json();
+
+        let filtered = data.data.filter((item)=>{
+            let id = item.id;
+            return cart.includes(id);
         });
-
-        Promise.all(fetchPromises).then(products => {
-            products.forEach(product => {
-                if (product) {
-                    const li = document.createElement('li');
-                    li.textContent = `${product.title}`;
-                    orderedItemsElement.appendChild(li);
-                }
-            });
-        }).catch(error => {
-            console.error('Error with Promise.all:', error);
-        });
-    } else {
-        console.log('Cart is empty');
+        if (filtered.length > 0) {
+            listCartToCheckout (filtered, out);
+        } else {
+            out.innerHTML = `You have no products added to cart`;
+        }
+    } catch (error) {
+        //console.error(error.message);
+        out.innerHTML = `Could not fetch data`;
     }
-});
+}
+
+cartToCheckout(cart);
+
+//display adress,name etc on checkout confirmation from form
+
+
+async function displayContactInfo() {
+
+    let savedName = localStorage.getItem('fullName');
+    let savedAdress = localStorage.getItem('adress');
+    let savedCity = localStorage.getItem('city');
+    let savedZip = localStorage.getItem('zip');
+
+    if (savedCity && savedZip && savedAdress) {
+        let combinedInfo = `${savedCity}, ${savedZip}, ${savedAddress}`;
+        var shippingAddressElement = document.querySelector('.shippingAddress');
+        shippingAddressElement.textContent = combinedInfo;
+    } else {
+        console.log('No saved data found for some or all of the keys: city, zip, address');
+    }
+}
+
+window.onload = function(){
+    displayContactInfo();
+}

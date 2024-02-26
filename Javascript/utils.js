@@ -37,7 +37,7 @@ if (!cartStorage) {
 } else {
     cart = JSON.parse(cartStorage);
 }
-console.log(cart);
+//console.log(cart);
 
 //add and remove from cart
 
@@ -86,6 +86,15 @@ export function listDataToCart(list, out){
     out.innerHTML = newCards;
 }
 
+export function listCartToCheckout(list, out){
+    out.innerHTML = "";
+    let summary = "";
+    for (let product of list) {
+        summary += `<p>${product.title}</p>`;
+    }
+    out.innerHTML = summary;
+}
+
 
 
 
@@ -129,7 +138,19 @@ export function filterJackets(jackets, gender) {
 
 //Checkout functions
 
+export function saveFormData() {
+    let fullName = document.getElementById('cartForm').elements['name'].value;
+    let city = document.getElementById('cartForm').elements['shippingCity'].value;
+    let zip = document.getElementById('cartForm').elements['shippingZip'].value;
+    let adress = document.getElementById('cartForm').elements['shippingAdress'].value;
 
+    localStorage.setItem('fullName', fullName);
+    localStorage.setItem('city', city);
+    localStorage.setItem('zip', zip);
+    localStorage.setItem('adress', adress);
+
+    console.log(saveFormData);
+}
 
 
 

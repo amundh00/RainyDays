@@ -17,12 +17,12 @@ async function collectJackets() {
         filter.addEventListener('change', () => {
           const selectedGender = filter.value;
           const filteredJackets = filterJackets(collection, selectedGender);
-          console.log(filteredJackets);
+          //console.log(filteredJackets);
           listData(filteredJackets, outElement);
         });
 
     } catch (error) {
-        console.error('Could not fetch data:', error);
+        //console.error('Could not fetch data:', error);
         outElement.innerHTML = `Could not fetch data...`;
     }
 }

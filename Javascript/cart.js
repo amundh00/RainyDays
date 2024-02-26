@@ -1,4 +1,4 @@
-import { listDataToCart, cart } from "./utils.js";
+import { listDataToCart, cart, saveFormData } from "./utils.js";
 console.log("cart", cart);
 
 const outElement = document.getElementById("checkout-box");
@@ -19,7 +19,7 @@ async function addedToCart(cart) {
             outElement.innerHTML = `You have no products added to cart`;
         }
     } catch (error) {
-        console.error(error.message);
+        //console.error(error.message);
         outElement.innerHTML = `Could not fetch data`;
     }
 }
@@ -61,3 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
